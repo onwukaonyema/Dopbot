@@ -1,0 +1,412 @@
+/*This project was created and designed by OnwukaOnyema, follow me on all platform @0nwuka0nyema*/
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body{
+  background-color: #111111;
+}
+ .box{
+   
+    animation: preloader;
+    animation-duration: 1s;
+    position: absolute;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 20;
+    top: 44%;
+    left: 44%;
+    display: grid;
+    place-items: center;
+  
+   
+}
+@keyframes preloader{
+  100%{transform: rotate(360deg);
+  }
+}
+.b{
+
+  width: 80px;
+  border: 5px solid rgb(23, 223, 16);
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-top-right-radius: 50px;
+  height: 80px;
+  border-radius: 50px;
+  padding-left:0;
+ 
+}
+.c{
+
+  width: 80px;
+  border: 5px solid rgb(16, 199, 223);
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-top-right-radius: 50px;
+  height: 80px;
+  border-radius: 50px;
+  padding-left: 10px;
+ 
+}
+.a{
+  padding-right:10px;
+  width: 80px;
+  border: 5px solid white;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-top-right-radius: 50px;
+  height: 80px;
+  border-radius: 50px;
+}
+.preloader{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    margin-left: -10px;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    right: 0;
+    overflow-y: hidden;
+    
+    
+}
+.fade-out
+{
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 0;
+    display: none;
+}
+.fills {
+  position: absolute;
+  z-index: 99;
+  margin-top: 450px;
+  background-color: rgb(11, 156, 11);
+  border-radius: 50px;
+  margin-left: 400px;
+  font-size: 18px;
+  width: 40px;
+  height: 39.5px;
+  padding: 5px;
+  border: none;
+  color: white;
+  opacity: 1 !important;
+}
+.fills:hover {
+  background-color: rgb(7, 112, 7);
+  transition: 1s ease-in-out;
+}
+.chat-head {
+  background-color: #0a0a0a;
+}
+.formb{
+  background-color: red !important;
+  background-size: cover;
+  width: fit-content;
+}
+.fill {
+  position: absolute;
+  z-index: 99;
+  margin-top: 450px;
+  background-color: #0a0a0a;
+  border-radius: 15px;
+  margin-left: 30px;
+  width: 23%;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: #ffffff;
+  border: none;
+}
+.menu{
+  position: fixed;
+  color: white;
+  font-size: 18px;
+  z-index: 99 !important;
+  right:480px;
+  top: 40px;
+
+}
+.form {
+  background-color: black;
+  z-index: 99;
+  margin-top: 20px;
+}
+.container {
+  width: 500px;
+  height: 530px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: inset;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+  background-image: url("bg.png");
+  background-size: cover;
+  opacity: 0.9;
+  background-color: #000000d5;
+  overflow-y: auto;
+
+  /*box-shadow: 20px 20px 100px #846bba, -20px -20px 100px #846bba;*/
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 99;
+  top: 22px;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+.me {
+  color: #ffffff;
+  background: #111111;
+  max-width: 50%;
+  max-height: 500px;
+  padding: 8px;
+  background-size: contain;
+  opacity: 1 !important;
+  border-radius: 10px 10px 10px 3px;
+  right: 0;
+  border: 15px;
+  top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+/*.me:after {
+   content: "";
+   position: fixed;
+   margin-top:260px;
+   left: 70px;
+   border-top: 20px solid #ffffff;
+   border-top-color: white; 
+   border-left: 13px solid transparent;
+   border-left: 13px solid transparent;
+   border-right: 13px solid transparent; 
+}*/
+.fill::placeholder {
+  padding: 7px;
+}
+.head {
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #0a0a0a;
+  color: white;
+  padding: 20px;
+  z-index: 10;
+  position: fixed;
+  padding-left: 80px;
+  width: 500px;
+  margin-top: -32px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.user {
+  background-color: rgb(12, 156, 12);
+  color: #ffffff;
+  max-width: 50%;
+  position: relative;
+  font-weight: 500;
+  max-height: 500px;
+  padding: 8px;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 10px 10px 3px 10px;
+  word-wrap: break-word;
+  right: 0;
+  margin-right: 10px;
+  border: 15px;
+  top: 10px;
+  white-space: normal;
+
+  margin-top: 10px;
+  margin-left: 230px;
+}
+
+.med::before {
+  left: 15px;
+  white-space: pre;
+}
+.status {
+  color: rgb(12, 156, 12);
+  margin-top: -10px;
+  z-index: 10;
+  font-size: 12px;
+  padding-left: 60px;
+  position: absolute;
+  background-color: #0a0a0a;
+  margin-left: 20px;
+}
+@media (max-width: 540px) {
+  .fills {
+    width: 10.2%;
+    margin-left: 80%;
+    background-color: rgb(11, 156, 11)
+    !important;
+    bottom: 10px;
+    padding: 10px;
+    position: fixed;
+    font-weight: 600;
+  }
+  body{
+    background-image: url("bg.png");
+    opacity:1;
+  }
+  .box{
+   
+    animation: preloader;
+    animation-duration: 1s;
+    position: absolute;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: 20;
+    top: 45%;
+    left: 42%;
+    display: grid;
+    place-items: center;
+  
+   
+}
+.b{
+
+  width: 80px;
+  border: 5px solid rgb(23, 223, 16);
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-top-right-radius: 50px;
+  height: 80px;
+  border-radius: 50px;
+  padding-left:0;
+ 
+}
+.c{
+
+  width: 80px;
+  border: 5px solid rgb(16, 199, 223);
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-top-right-radius: 50px;
+  height: 80px;
+  border-radius: 50px;
+  padding-left: 10px;
+ 
+}
+.a{
+  padding-right:10px;
+  width: 80px;
+  border: 5px solid white;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-top-right-radius: 50px;
+  height: 80px;
+  border-radius: 50px;
+}
+.preloader{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    margin-left: -10px;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    right: 0;
+    overflow-y: hidden;
+    
+    
+}
+.fade-out
+{
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 0;
+    display: none;
+}
+@keyframes preloader{
+    100%{transform: rotate(360deg);
+    }
+}
+.menu{
+    right: 20px;
+    top: 25px;
+  }
+  .status {
+    color: rgb(12, 156, 12);
+    margin-top: -35px;
+    z-index: 10;
+    font-size: 12px;
+    position: fixed;
+    
+    filter: brightness(200%);
+    margin-left: 19px;
+    font-weight: 500px;
+  }
+  .container {
+    width: 100%;
+    height: 100% !important;
+    overflow-x: auto;
+    background-image: unset;
+    background-color: #000000c0;
+    background-size: cover;
+  top: 0;
+    right: 0;
+    position: absolute;
+    
+  }
+  .fill {
+    margin-left: 10px;
+    width: 65%;
+    bottom: 7px;
+    position: fixed;
+    
+
+  }
+  .user {
+    max-width: 50%;
+    margin-left: 180px;
+    
+
+  }
+  .head {
+    margin-top: -50px;
+    margin-left: 0;
+    width: 100%;
+    border-radius: 0;
+    margin-right: -105px;
+    z-index: 5;
+  }
+  .logo{
+    z-index: 15 !important;
+    position: fixed;
+    top: 5px;
+    
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .fills {
+    margin-left: 350px;
+  }
+  .fill {
+    width: 38%;
+  }
+  .user {
+    margin-left: 300px;
+  }
+}

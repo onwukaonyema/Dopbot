@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--This project was created and designed by OnwukaOnyema, follow me on all platform @0nwuka0nyema-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DopBot</title>
+    <script>window.addEventListener("load" , ()=>{
+      setTimeout(()=>{
+        document.querySelector(".preloader").classList.add("fade-out");
+        document.querySelector(".preloder").style.dispaly="none";
+    },7000)
+    })</script>
+  </head>
+  <div class="preloader">
+    <div class="box">
+      <div class="a">
+        <div class="b">
+          <div class="c">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <body>
+    <div class="container" id="chat">
+      <div class="chat-space">
+        <img src="logo.jpg" class="logo" alt="doplersweb-logo"/>
+        <i class="fa fa-ellipsis-v menu" aria-hidden="true"></i>
+        <h3 class="head">DopBot</h3>
+        <br />
+        <h5 class="status">Online</h5>
+        <div id="form">
+          <textarea
+            class="fill"
+            placeholder="Say something.."
+            id="input"
+            required
+          ></textarea
+          ><button type="button" class="fills" onclick="message()" id="input">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
