@@ -94,10 +94,10 @@ body{
   background-color: rgb(11, 156, 11);
   border-radius: 50px;
   margin-left: 400px;
-  font-size: 18px;
-  width: 40px;
-  height: 39.5px;
-  padding: 5px;
+  font-size: 15px;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
   border: none;
   color: white;
   opacity: 1 !important;
