@@ -5,13 +5,15 @@
 
 function message() {
   let input = document.getElementById("input").value.toLowerCase();
+  input = document.getElementById("input").value.trim();
   let para = document.createElement("p");
   para.setAttribute("class", "user");
   para.innerText = input;
   document.getElementById("chat").appendChild(para);
-  event.preventDefault();
-
+  
   if (
+    
+
     input == "i love you" ||
     input == "ily" ||
     input == "i love you " ||
@@ -19,6 +21,7 @@ function message() {
     input == "ily " ||
     input == "i like you"
   ) {
+
     let head = document.createElement("h1");
     head.innerHTML = "I love you more❤";
 
@@ -29,7 +32,9 @@ function message() {
     chat.appendChild(head);
     chat.scrollTop = chat.scrollHeight;
     console.log("rest");
-  } else if (
+  } 
+  
+  else if (
     input == "fuck you" ||
     input == "fuck u" ||
     input === "f**k u" ||
@@ -307,14 +312,61 @@ function message() {
     chat.appendChild(head);
     chat.scrollTop = chat.scrollHeight;
     console.log("my master");
-  } else {
-    let head = document.createElement("h1");
-    head.innerText = "can't understand";
+  } 
+  
+  /*else if(input===1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 0 ){
+
+    function fun2(){
+    let shhh = eval(document.querySelector(".fill").value);
+  
+     return shhh;
+    }
+    console.log(fun2());
+    let hea = document.createElement("h2");
+    hea.setAttribute("class", "me");
+    hea.innerHTML = fun2();
+
+    input = document.getElementById("input").value = "";
+
+    chat.appendChild(hea);
+    chat.scrollTop = chat.scrollHeight;
+    console.log("my master");
+    
+  
+  
+  }*/
+  
+  else {
+    
+    let head = document.createElement("h2");
+    
+    head.innerHTML ="I'm sorry if I can't really help with that, if you still have problems contact our helpline.";
     head.setAttribute("class", "me");
+
     let chat = document.getElementById("chat");
     chat.appendChild(head);
-    input = document.getElementById("input").value = "";
+    //input = document.getElementById("input").value = "";
     chat.scrollTop = chat.scrollHeight;
     console.log("no");
   }
+ 
+   function fun2(){
+    let shhh = eval(document.querySelector(".fill").value);
+  
+     return shhh;
+     
+    }
+    let head = document.createElement("h2");
+    
+     head.innerHTML =fun2();
+     head.setAttribute("class", "me");
+ 
+     let chat = document.getElementById("chat");
+     chat.appendChild(head);
+     //input = document.getElementById("input").value = "";
+     chat.scrollTop = chat.scrollHeight;
+     
+    console.log(fun2());
+    return false;
 }
+

@@ -102,6 +102,7 @@ body{
   color: white;
   opacity: 1 !important;
 }
+
 .fills:hover {
   background-color: rgb(7, 112, 7);
   transition: 1s ease-in-out;
@@ -137,7 +138,7 @@ body{
   top: 40px;
 
 }
-.form {
+#form {
   background-color: black;
   z-index: 99;
   margin-top: 20px;
@@ -157,7 +158,8 @@ body{
   opacity: 0.9;
   background-color: #000000d5;
   overflow-y: auto;
-
+  padding-bottom: 5%;
+  
   /*box-shadow: 20px 20px 100px #846bba, -20px -20px 100px #846bba;*/
 }
 .logo{
@@ -237,6 +239,27 @@ body{
   margin-top: 10px;
   margin-left: 230px;
 }
+.user1 {
+  background-color: rgb(12, 156, 12);
+  color: #ffffff;
+  max-width: 50%;
+  position: relative;
+  font-weight: 500;
+  max-height: 500px;
+  padding: 8px;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 10px 10px 3px 10px;
+  word-wrap: break-word;
+  right: 0;
+  margin-right: 10px;
+  border: 15px;
+  top: 10px;
+  white-space: normal;
+
+  margin-top: 10px;
+  margin-left: 230px;
+}
 
 .med::before {
   left: 15px;
@@ -266,6 +289,8 @@ body{
   body{
     background-image: url("bg.png");
     opacity:1;
+    padding-bottom: 15%;
+
   }
   .box{
    
@@ -368,7 +393,6 @@ body{
   top: 0;
     right: 0;
     position: absolute;
-    
   }
   .fill {
     margin-left: 10px;
